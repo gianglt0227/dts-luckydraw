@@ -24,6 +24,8 @@ public class GetListGuestCmd extends MobileBaseCmd{
 	@Override
 	public Result executeCmd(HttpServletRequest req) throws Exception {
 		logger.info("GetListGuestCmd");
+		//reset list trung thuong
+		lucky.resetAll();
 		ArrayList<Guest> lstGuest = lucky.getLstGuest();
 		ArrayList<GuestInfo> ListGuestInfo = new ArrayList<GuestInfo>();
 		

@@ -1,0 +1,24 @@
+{
+  "url_notification": "http://gamebai.net/notifyServices",
+  "ip_list": "203.113.159.26",
+  "callcenter": "0945.068.140",
+  "url_upload": "http://gamebai.net/notifyServices",
+  "url_android_store": "http://play.google.com",
+  "url_ios_store": "http://play.apple.com",
+},
+
+"and24122018":{
+		"ip":"ifish.southeastasia.cloudapp.azure.com",
+		"port":3000,
+		"isbilling":0,
+		"listgun_normal":"10,100,200,300,500,700,1000",
+		"listgun_vip":"10,100,200,300,500,700,1000"
+	},
+
+"ios24122018":{
+		"ip":"ifish.southeastasia.cloudapp.azure.com",
+		"port":3000,
+		"isbilling":0,
+		"listgun_normal":"10,100,200,300,500,700,1000",
+		"listgun_vip":"10,100,200,300,500,700,1000"
+	},

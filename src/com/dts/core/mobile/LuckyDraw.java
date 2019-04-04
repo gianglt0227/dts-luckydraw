@@ -18,6 +18,11 @@ public class LuckyDraw {
 	public static final int FIRST_PRIZE = 1;
 	public static final int SECOND_PRIZE = 2;
 	public static final int LAST_PRIZE = 3;
+	public static final int REJECT_PRIZE = 100;
+	
+	public static final int FIRST_PRIZE_COUNT = 1;
+	public static final int SECOND_PRIZE_COUNT = 1;
+	public static final int LAST_PRIZE_COUNT = 10;
 	
 	private ArrayList<Guest> lstGuest = new ArrayList<Guest>();
 	private Log logger = LogFactory.getLog(this.getClass());
@@ -46,6 +51,12 @@ public class LuckyDraw {
 	}
 	
 	public Guest rotateLuckyDraw(int prize){
+		if (prize < FIRST_PRIZE || prize > LAST_PRIZE)
+			return null;
+		
+		if (canMorePrize(prize) == false)
+			return null;
+		
 		Random rand = new Random();
 		ArrayList<Guest> lstRandom = new ArrayList<Guest>();			
 		
@@ -68,7 +79,39 @@ public class LuckyDraw {
 	
 	public void cancelLuckyResult(int index){
 		Guest guest = lstGuest.get(index);
-		guest.setWonprize(NONE_PRIZE);
+		guest.setWonprize(REJECT_PRIZE);
+	}
+	
+	private int countWonPrize(int prize){
+		int count = 0;
+		for (int i=0; i<lstGuest.size(); i++){
+			Guest guest = lstGuest.get(i);
+			if (guest.getWonprize() == prize)
+				count++;
+		}
+		
+		return count;
+	}
+	
+	private boolean canMorePrize(int prize){
+		int count = countWonPrize(prize);
+		
+		if (prize == FIRST_PRIZE)
+		{
+			if (count >= FIRST_PRIZE_COUNT)
+				return false;
+		}
+		else if (prize == SECOND_PRIZE)
+		{
+			if (count >= SECOND_PRIZE_COUNT)
+				return false;
+		}
+		else if (prize == LAST_PRIZE){
+			if (count >= LAST_PRIZE_COUNT)
+				return false;
+		}
+		
+		return true;
 	}
 	
 	public void resetAll(){

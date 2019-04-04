@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="E:/Work/2018/iFish/WS - Luckydraw/luckydraw.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/luckydraw/luckydraw.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.common.util"/>
+        <file path="/luckydraw/.project"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.main"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.mobile.luckycmd"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.mobile"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.mobile.cmd"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.mobile.entity"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.common"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.db.cmd"/>
+        <file path="/luckydraw/.classpath"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.mobile.result"/>
+        <javaElement handleIdentifier="=luckydraw/&lt;com.dts.core.db"/>
+    </selectedElements>
+</jardesc>

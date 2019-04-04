@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<h2tapi-configuration>
+  <core>
+  	<api>
+  		<path>/api</path>
+  		<port>7788</port>
+  	</api>
+  </core>
+</h2tapi-configuration>

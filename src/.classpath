@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="lib" path="E:/Work/2018/iFish/WS/lib/commons-configuration-1.8.jar"/>
+	<classpathentry kind="lib" path="E:/Work/2018/iFish/WS/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="E:/Work/2018/iFish/WS/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Work/2018/iFish/WS/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="E:/Work/2018/iFish/WS/lib/jetty-runner.jar"/>
+	<classpathentry kind="lib" path="E:/Work/2018/iFish/WS/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="E:/Work/2018/iFish/WS/lib/apputil.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
